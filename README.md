@@ -4,26 +4,20 @@ SpeechImprovement - веб-приложение на Python для улучше�
 Установка
 Склонируйте репозиторий с помощью команды:
 bash
-Copy code
 git clone https://github.com/dagrishin/SpeechImprovement.git
 Перейдите в каталог проекта:
 bash
-Copy code
 cd SpeechImprovement
 Установите зависимости:
-Copy code
 pip install -r requirements.txt
 Создайте файл config.py в папке instance и добавьте настройки для приложения:
 python
-Copy code
 SECRET_KEY = 'mysecretkey'
 DATABASE_URI = 'sqlite:///SpeechImprovement.db'
 Создайте базу данных:
 bash
-Copy code
 python app/create_db.py
 Запустите приложение:
-Copy code
 flask run
 Перейдите в браузере на http://localhost:5000/ и начните использовать приложение.
 Использование
