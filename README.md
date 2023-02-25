@@ -1,34 +1,44 @@
-SpeechImprovement
-SpeechImprovement - веб-приложение на Python для улучшения произношения на иностранных языках. Приложение предлагает набор упражнений, которые пользователи могут выполнять, записывая свой голос и получая обратную связь по результатам анализа.
+# SpeechImprovement
 
-Установка
-Склонируйте репозиторий с помощью команды:
-bash
-git clone https://github.com/dagrishin/SpeechImprovement.git
-Перейдите в каталог проекта:
-bash
-cd SpeechImprovement
-Установите зависимости:
-pip install -r requirements.txt
-Создайте файл config.py в папке instance и добавьте настройки для приложения:
-python
-SECRET_KEY = 'mysecretkey'
-DATABASE_URI = 'sqlite:///SpeechImprovement.db'
-Создайте базу данных:
-bash
-python app/create_db.py
-Запустите приложение:
-flask run
-Перейдите в браузере на http://localhost:5000/ и начните использовать приложение.
-Использование
-SpeechImprovement содержит две основные страницы:
+## Description
+SpeechImprovement is a Python web application for improving pronunciation in foreign languages. The application offers a set of exercises that users can perform while recording their voice and getting feedback on the results of the analysis.
+## Installation
+1. Clone the repository to your local machine:
+`git clone https://github.com/dagrishin/SpeechImprovement.git`
+2. Change to the project directory:
+`cd SpeechImprovement`
+3. Install the required dependencies by running:
+`pip install -r requirements.txt`
+4. Create a config.py file in the instance folder and add settings for the application:
+`SECRET_KEY = 'mysecretkey'
+DATABASE_URI = 'sqlite:///SpeechImprovement.db'`
+5. Create a database:
+`python app/create_db.py`
+6. Run `python app.py` to start the application.
+7. Navigate your browser to http://localhost:5000/ and start using the application.
 
-Главная страница, на которой пользователи могут начать выполнять упражнения.
-Страница упражнений, на которой пользователи могут выбрать конкретное упражнение для выполнения.
-Каждое упражнение имеет инструкцию по выполнению и кнопку для начала записи голоса. Пользователь может записать свой голос, после чего приложение проанализирует запись и предоставит обратную связь по произношению.
+## Usage
+Once the application is running, users can sign up for an account and start practicing their pronunciation. The application provides a variety of exercises in the target foreign language, and uses speech recognition technology to analyze the user's voice and provide feedback on areas for improvement. The user's progress is saved in the database, allowing them to track their improvement over time.
 
-Авторы
-SpeechImprovement был создан [имя и фамилия].
+## Technologies Used
+The Speech Improvement Project is built using the following technologies:
+- Python
+- Flask
+- PostgreSQL
+- Web Audio API
+- SpeechRecognition
+- Pydub
+- Librosa
 
-Лицензия
-Этот проект находится под лицензией [название лицензии]. Подробную информацию смотрите в файле LICENSE.
+## Future Improvements
+Some potential improvements for the Speech Improvement Project include:
+- Adding support for multiple foreign languages
+- Implementing more advanced speech analysis algorithms
+- Adding a social component to allow users to practice with each other
+- Integrating with popular language learning platforms
+
+## Contributing
+Contributions to the Speech Improvement Project are welcome. To contribute, please fork the repository, make your changes, and submit a pull request.
+
+## License
+The Speech Improvement Project is licensed under the [MIT License](https://opensource.org/licenses/MIT).
