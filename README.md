@@ -24,7 +24,6 @@ Once the application is running, users can sign up for an account and start prac
 The Speech Improvement Project is built using the following technologies:
 - Python
 - Flask
-- PostgreSQL
 - Web Audio API
 - SpeechRecognition
 - Pydub
